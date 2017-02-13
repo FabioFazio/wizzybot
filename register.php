@@ -2,7 +2,8 @@
 
 // PARAMETRI DA MODIFICARE
 $WEBHOOK_URL = 'https://wizzybot.herokuapp.com/execute.php';
-$BOT_TOKEN = '760-0d32-40bb-beda-6fe41f7c7397';
+$NOT_TOKEN = '362116522:AAEXdq1lMnrXMoo2GbmaTzj3eRlqLcSZ4uQ';
+//$BOT_TOKEN = '760-0d32-40bb-beda-6fe41f7c7397';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
