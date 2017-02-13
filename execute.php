@@ -7,7 +7,14 @@ if(!$update)
   exit;
 }
 
-$message = isset($update['message']) ? $update['message'] : "";
+//$message = isset($update['message']) ? $update['message'] : "";
+
+$execute = function($message,$username){
+	$message = isset($message) ? $message : "";
+	return $message;
+};
+
+$message = $execute($update['message'],$message['chat']['username']);
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
