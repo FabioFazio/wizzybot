@@ -1,8 +1,8 @@
 import telebot
 import hashlib
+import os
 
-# Sostituisci con i tuoi dati
-TOKEN = "IL_TUO_TOKEN"
+TOKEN = os.environ.get('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(func=lambda message: True)
